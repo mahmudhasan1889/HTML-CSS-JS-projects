@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Sailing in the Cosmos">
+    <meta name="keywords" content="html, HTML">
+    <meta name="author" content="Cosmic Nomad">
+
+    <!-- Icons -->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <script src="script.js" type="module"></script>
+
+    <!-- Font Awesome 5 -->
+    <script src="https://kit.fontawesome.com/1b0a0e3d72.js" crossorigin="anonymous"></script>
+
+    <title>Dropdown Menu</title>
+
+    <style>
+
+        .navbar{
+            display: block;
+            text-align: center;
+            background-color: turquoise;
+            text-align: center;
+            padding: 1% 7%;
+        }
+
+        .navbar a{
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .container{
+            display: inline;
+            position: relative;
+        }
+
+        .content{
+            position: absolute;
+            display: none;
+            right: 0px;
+            top: 30px;
+            text-align: left;
+            background-color: turquoise;
+            margin: 10px;
+            min-width: 100px;
+            transition: all 0.3s ease;
+        }
+
+        .content a{
+            display: block;
+        }
+
+        .content a:hover{
+            background-color: yellow;
+        }
+
+        .container:hover .content{
+            display: block;
+        }
+
+       
+    </style>
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Tutorial</a>
+        <div class="container">
+            <a href="#">Contact me</a>
+            <div class="content">
+                <a href="#">Facebook</a>
+                <a href="#">Email</a>
+            </div>
+        </div>
+        <a href="#">About me</a>
+    </div>
+
+</body>
+</html>

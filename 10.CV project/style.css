@@ -1,0 +1,133 @@
+/* Google font - Poppins */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap'); */
+
+/* Google font - Oswald */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@100..700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 700;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: "Oswald", sans-serif;
+}
+
+body{
+    background-color: #eee;
+}
+
+.container{
+    max-width: 1000px;
+    background-color: cadetblue;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.profile-image{
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    border-radius: 50%;
+    padding: 1px;
+    float: left;
+
+}
+
+.header-bio{
+    float: left;
+    padding: 25px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: #0012af;
+}
+
+.header-contact{
+    float: right;
+    padding: 30px;
+}
+
+.header-contact a{
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+}
+
+.header-contact a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.clear-div{
+    clear: both;
+}
+
+hr{
+    border: 3px solid black;
+    width: 100%;
+    margin: 20px auto;
+    border-bottom: none;
+}
+
+/* Personal Information */
+/* #personal-information{} */
+
+.content{
+    margin-bottom: 30px;
+}
+
+.left-div{
+    width: 30%;
+    float: left;
+}
+
+.right-div{
+    width: 70%;
+    float: left;
+}
+
+.common-hr{
+    border: 1px solid black;
+    border-bottom: none;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.edu-template-left{
+    width: 50%;
+    float: left;
+}
+
+.edu-template-right{
+    width: 50%;
+    float: left;
+}
+
+#awards-section .right-div ul{
+    margin-left: 15px;
+}
+
+.bottom-container{
+    background-color: #000;
+    text-align: center;
+    padding: 10px;
+}
+
+.bottom-container a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.bottom-container a:hover{
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+.bottom-container p{
+    color: white;
+    opacity: 0.8;
+    margin-top: 20px;
+}
