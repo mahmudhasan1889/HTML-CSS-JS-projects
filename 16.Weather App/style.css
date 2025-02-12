@@ -1,0 +1,246 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
+
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+
+/* Actual code starts from here */
+
+/* Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Google font - Open Sans */
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;300;400;500;600&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: #E3F2FD;
+}
+h1{
+    color: #fff;
+    background: #5372F0;
+    padding: 18px 0;
+    text-align: center;
+    font-size: 1.75rem;
+}
+.container{
+    display: flex;
+    gap: 35px;
+    padding: 30px;
+}
+
+
+
+/* weather input start*/
+.weather-input{
+    width: 550px;
+}
+.weather-input input{
+    width: 100%;
+    height: 46px;
+    outline: none;
+    padding: 0 15px;
+    margin: 10px 0 20px 0;
+    font-size: 1.07rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+.weather-input .separator{
+    height: 1px;
+    width: 100%;
+    background-color: #bbb;
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.weather-input .separator::before{
+    content: "or";
+    color: #6C757D;
+    font-size: 1rem;
+    padding: 0 15px;
+    background-color: #E3F2FD;
+    margin-top: -4px;
+}
+.weather-input button{
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: #5372F0;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.weather-input .location-btn{
+    background-color: #6C757D;
+}
+/* weather input end*/
+
+
+
+
+
+
+/* weather data start */
+.weather-data{
+    width: 100%;
+}
+.current-weather{
+    color: #fff;
+    background-color: #5372F0;
+    display: flex;
+    border-radius: 5px;
+    padding: 20px 70px 20px 20px;
+    justify-content: space-between;
+}
+.current-weather h2{
+    font-size: 1.7rem;
+}
+.current-weather h4{
+    margin-top: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.current-weather .icon img{
+    max-width: 120px;
+    margin-top: -15px;
+}
+.current-weather .icon h6{
+    margin-top: -10px;
+    text-transform: capitalize;
+}
+/* weather data end*/
+
+
+
+
+/* weather forecast start */
+.days-forecast h2{
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+.weather-cards{
+    display: flex;
+    gap: 20px;
+}
+.weather-cards .card{
+    list-style: none;
+    color: #fff;
+    padding: 18px 16px;
+    border-radius: 5px;
+    background-color: #6C757D;
+    width: calc(100% / 5);
+}
+.weather-cards .card img{
+    max-width: 70px;
+    margin: 5px 0 -12px 0;
+}
+
+/* weather forecast end */
+
+
+
+
+
+
+/* Responsive */
+@media (max-width: 1400px){
+    .weather-cards .current-weather{
+        padding: 20px;
+    }
+    .weather-cards{
+        flex-wrap: wrap;
+    }
+    .weather-cards .card{
+        width: calc(100% / 4 - 15px);
+    }
+}
+
+@media (max-width: 1200px){
+    .weather-cards .card{
+        width: calc(100% / 3 - 15px);
+    }
+}
+
+@media (max-width: 950px){
+    .weather-input{
+        width: 450px;
+    }
+    .weather-cards .card{
+        width: calc(100% / 2 - 15px);
+    }
+}
+
+@media (max-width: 750px){
+    .container{
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    .weather-input{
+        width: 100%;
+    }
+}
